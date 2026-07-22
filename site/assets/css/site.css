@@ -86,6 +86,9 @@ table.list td.desc { max-width: 34rem; }
 .flag-n { color: var(--good); }
 .flag-unknown { color: var(--muted); }
 
+.jurisdiction-entry { border: 1px solid var(--border); border-radius: .4rem; padding: 1rem 1.25rem; margin: 0 0 1.25rem; }
+.jurisdiction-entry h3 { margin: 0 0 .5rem; font-size: 1.05rem; display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
+
 .counts { display: flex; gap: 2rem; margin: 1.5rem 0; flex-wrap: wrap; }
 .counts .count .n { font-size: 2rem; font-weight: 700; display: block; }
 .counts .count .label { color: var(--muted); font-size: .9rem; }
