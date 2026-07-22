@@ -1,0 +1,59 @@
+---
+title: The Directory — The Fleet Operator Directory
+description: Outdoor drone light show operators meeting the published inclusion criteria — alphabetical, no ranking, every claim sourced.
+url: /directory/
+---
+<div class="breadcrumbs"><a href="/">Home</a> &gt; Directory</div>
+<h1>The directory</h1>
+<p class="subtitle">[[TOTAL]] operators, alphabetical. See the
+<a href="/methodology/">inclusion criteria</a> for what it takes to be
+listed.</p>
+
+<div class="filters" id="dirFilters">
+  <label>Search
+    <input type="search" data-filter-field="search" data-filter-mode="search" placeholder="Name, HQ, region&hellip;">
+  </label>
+  <button type="button" data-filter-reset>Reset</button>
+</div>
+<p class="subtitle" id="dirCount">[[TOTAL]] operators</p>
+
+<div class="wrap" style="overflow-x:auto; padding:0;">
+<table class="list" id="dirTable">
+  <thead>
+    <tr>
+      <th>Operator</th>
+      <th>HQ / regions served</th>
+      <th>Fleet scale (as claimed)</th>
+      <th>Notable public shows</th>
+      <th>FAA waiver status</th>
+      <th>Website</th>
+    </tr>
+  </thead>
+  <tbody>
+[[ROWS]]
+  </tbody>
+</table>
+</div>
+<script src="/assets/js/filter.js" defer></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  initTableFilters({ table: "dirTable", filters: "dirFilters", count: "dirCount", label: "operators" });
+});
+</script>
+
+<h2>Reading the waiver column</h2>
+<p>"Confirmed" means an FAA waiver number or a documented incident/
+reinstatement record was independently verified. "Claimed, not
+independently verified" means the operator's own site asserts FAA
+compliance without a checkable docket number. "Not publicly stated"
+means no waiver claim was found either way &mdash; not evidence against
+compliance, just the absence of a public claim. See the
+<a href="/methodology/">methodology page</a>.</p>
+
+<h2>Not listed here on purpose</h2>
+<p>Verge Aero and UVify were researched and excluded: both primarily
+sell or lease drone-show hardware and software platforms to other
+operators rather than operating their own fleet for client shows &mdash;
+they don't meet this directory's "operates its own fleet" criterion.
+Companies searched but not found via a verifiable, live public source
+are also excluded rather than padded in.</p>

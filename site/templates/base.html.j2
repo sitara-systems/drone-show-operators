@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}">
+<link rel="canonical" href="{{ site_url }}{{ page.url }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Fleet Operator Directory">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:url" content="{{ site_url }}{{ page.url }}">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/assets/css/site.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dataset","name":"The Fleet Operator Directory","description":"A neutral directory of outdoor drone light show operators meeting published inclusion criteria, ordered alphabetically with no ranking, for producers looking for a fleet to fly a show.","url":"{{ site_url }}/","license":"https://creativecommons.org/licenses/by/4.0/","creator":{"@type":"Organization","name":"Sitara Skies","url":"https://skies.sitara.systems/","parentOrganization":{"@type":"Organization","name":"Sitara Systems","url":"https://sitara.systems/"}},"keywords":["drone show companies","drone light show operators near me","drone show fleet operator"]}
+</script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/">The Fleet Operator Directory</a>
+    <nav class="site">
+      <a href="/directory/">Directory</a>
+      <a href="/methodology/">Inclusion criteria</a>
+      <a href="/about/">About</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+{{ content }}
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p>The Fleet Operator Directory is published and maintained by
+    <a href="https://skies.sitara.systems">Sitara Skies</a>, an aerial
+    show design studio and a venture of
+    <a href="https://sitara.systems">Sitara Systems</a>. Data licensed
+    <a href="https://creativecommons.org/licenses/by/4.0/legalcode">CC BY 4.0</a>.
+    <a href="/about/">About &amp; rules of the road</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

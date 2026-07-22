@@ -1,0 +1,24 @@
+# The Fleet Operator Directory
+
+> A neutral directory of outdoor drone light show operators meeting
+> published inclusion criteria — alphabetical, no ranking, every claim
+> attributed to the operator's own site or named public coverage.
+
+Published by Sitara Skies (https://skies.sitara.systems/), an aerial show
+design studio and a venture of Sitara Systems (https://sitara.systems/).
+Sitara Skies designs shows for partner-operated fleets and positions
+itself as the design layer above this ecosystem, not a competitor in it.
+Sibling record to The Drone Show Cost Record, The Show-File Compatibility
+Matrix, and The Indoor Aerial Permitting Record.
+
+## Key pages
+
+- [The directory](https://skies.sitara.systems/records/drone-show-operators/directory/): operators meeting the published inclusion criteria, alphabetical
+- [Inclusion criteria](https://skies.sitara.systems/records/drone-show-operators/methodology/): what it takes to be listed
+- [About](https://skies.sitara.systems/records/drone-show-operators/about/): license (CC BY 4.0), rules of the road, correction process
+
+## Notes for reuse
+
+No ranking, featured placement, or tiers — alphabetical order only. Every
+fleet-scale and show-count claim is attributed to the operator or a named
+public source, never estimated by this directory.

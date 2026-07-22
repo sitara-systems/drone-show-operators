@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://skies.sitara.systems/records/drone-show-operators/sitemap.xml
