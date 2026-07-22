@@ -50,7 +50,7 @@ ROOT = Path(__file__).resolve().parent
 # change it at deploy time (or override via the SITE_URL env var) and every
 # internal link/asset reference derives from it, so the site works
 # regardless of whether it's served at the domain root or a subdirectory.
-SITE_URL = os.environ.get("SITE_URL", "https://skies.sitara.systems/records/drone-show-operators")
+SITE_URL = os.environ.get("SITE_URL", "https://skies.sitara.systems/drone-show-operators")
 BASE = urllib.parse.urlsplit(SITE_URL).path.rstrip("/")
 
 PAGES_DIR = ROOT / "content" / "pages"

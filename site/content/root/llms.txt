@@ -13,9 +13,9 @@ Matrix, and The Indoor Aerial Permitting Record.
 
 ## Key pages
 
-- [The directory](https://skies.sitara.systems/records/drone-show-operators/directory/): operators meeting the published inclusion criteria, alphabetical
-- [Inclusion criteria](https://skies.sitara.systems/records/drone-show-operators/methodology/): what it takes to be listed
-- [About](https://skies.sitara.systems/records/drone-show-operators/about/): license (CC BY 4.0), rules of the road, correction process
+- [The directory](https://skies.sitara.systems/drone-show-operators/directory/): operators meeting the published inclusion criteria, alphabetical
+- [Inclusion criteria](https://skies.sitara.systems/drone-show-operators/methodology/): what it takes to be listed
+- [About](https://skies.sitara.systems/drone-show-operators/about/): license (CC BY 4.0), rules of the road, correction process
 
 ## Notes for reuse
 

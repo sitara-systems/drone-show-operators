@@ -27,9 +27,9 @@ python -m http.server 8098 -d _site
 ## Deployment target
 
 Designed to be folded into `sitara-skies-website`'s deploy pipeline as
-`/records/drone-show-operators/`, the same way `experiential-design-index`
+`/drone-show-operators/`, the same way `experiential-design-index`
 and `exhibit-cost-record` fold into `sitara-website`. `SITE_URL` defaults
-to `https://skies.sitara.systems/records/drone-show-operators` (override
+to `https://skies.sitara.systems/drone-show-operators` (override
 via the `SITE_URL` env var for a preview/interim deploy).
 
 Until that fold-in lands, `.github/workflows/deploy-pages.yml` builds and
