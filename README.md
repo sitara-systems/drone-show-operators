@@ -21,26 +21,34 @@ process.
 
 | File | Rows | Source |
 |---|---|---|
-| `data/operators.csv` | 10 | Each operator's own site + independent public coverage (news, FAA waiver records) |
+| `data/operators.csv` | 15 | Each operator's own site + independent public coverage (news, FAA waiver records, one federal court filing) |
 
-Columns: `slug, name, hq_regions, fleet_scale_claim, notable_shows,
-notable_shows_source, website, waiver_status`.
+Columns: `slug, name, hq_regions, fleet_scale_claim, fleet_scale_short,
+notable_shows, notable_shows_source, website, waiver_status,
+waiver_short`. The `_short` columns are compact display strings for the
+browse table; the full attributed text lives in the long-form columns
+and surfaces as a hover tooltip on the operator's name.
 
 ## Known caveats
 
 - Fleet-scale and show-count figures are as claimed by the operator or a
   named source — not independently audited by this directory.
-- FAA waiver status is reported in three states: confirmed (a docket
-  number or documented incident record was found), claimed-not-verified
-  (the operator asserts compliance without a checkable number), or not
-  publicly stated. Absence of a public claim is not evidence of
+- FAA waiver status is reported in several states: confirmed (a docket
+  number or documented incident record was found), expired/lapsed
+  (a real waiver found but its term has passed), claimed-not-verified
+  (the operator asserts compliance without a checkable number), not
+  publicly stated, or not applicable (non-US operator, no FAA
+  jurisdiction). Absence of a public claim is not evidence of
   non-compliance.
-- Verge Aero and UVify were researched and excluded — both primarily sell
-  or lease drone-show platforms to other operators rather than operating
-  their own fleet for client shows.
-- Companies searched but not verifiable via a live public source (several
-  named in the original research brief) were dropped rather than padded
-  into the list.
+- **Verge Aero** is included despite primarily selling a hardware+
+  software platform to other operators — its own site documents it
+  directly flying client shows (Rice University, historically the
+  Philadelphia Eagles) under its own name. The dual role is noted in its
+  entry, not hidden. **UVify** remains excluded — no evidence found of
+  it flying shows under its own brand, only renting fleet capacity to
+  others.
+- Companies searched but not verifiable via a live public source were
+  dropped rather than padded into the list.
 
 ## License
 

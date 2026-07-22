@@ -11,16 +11,26 @@
 3. **FAA waiver status is disclosed where claimable from public
    sources.** Reported, not required for inclusion.
 
+## Dual-role companies — included, not excluded
+
+- **Verge Aero** primarily sells/licenses a drone-show hardware+software
+  platform to other operators ("Buy a Drone Show Fleet," a
+  #PoweredByVerge partner network in 50+ countries) — but its own site
+  also documents it directly flying client shows with its own named
+  staff (a Rice University presidential inauguration; historically the
+  Philadelphia Eagles' in-stadium shows). Included on the strength of
+  that direct-operation evidence, with the dual role flagged in its
+  entry rather than hidden. Re-audited 2026-07-22; the original
+  exclusion (based only on the platform-sales side of the business) was
+  reversed once the direct-operation evidence surfaced.
+
 ## Excluded on purpose
 
-- **Verge Aero** — sells/leases a drone-show hardware+software platform
-  to other operators worldwide ("Buy a Drone Show Fleet," partners in
-  50+ countries per its own site) rather than operating a fleet itself
-  for public shows.
 - **UVify** — "biggest maker of light-show drones" per its own
   materials, runs a drone-rental program ("FAB — Fleet Augmentation by
-  UVify") for other operators; same manufacturer/platform pattern as
-  Verge Aero.
+  UVify") for other operators; no evidence found of UVify itself flying
+  client shows under its own brand — the reseller/infrastructure pattern
+  this directory excludes.
 - Several additional named companies were searched and dropped because
   no live, verifiable public source was found for them (searches either
   returned nothing on-point or returned an unrelated company of the same
@@ -30,18 +40,29 @@
 
 Every fleet-scale figure and show-count claim is attributed to the
 operator's own site or a named public source — never estimated. FAA
-waiver status is recorded in one of three states:
+waiver status is recorded in one of several states:
 
 - **Confirmed** — an FAA docket number or a documented incident/
   reinstatement record was independently verified (Great Lakes Drone
-  Company, Sky Elements, Skyworx).
+  Company, Sky Elements, Skyworx, Nova Sky Stories, Firefly Drone Shows,
+  Pixis Drones).
+- **Expired / lapsed** — a real waiver was found but its stated term has
+  passed with no renewal located (Dronisos).
 - **Claimed, not independently verified** — the operator's own materials
-  assert FAA compliance without a checkable docket number (Dronisos,
-  Firefly Drone Shows).
+  assert FAA compliance without a checkable docket number (Open Sky
+  Pro).
 - **Not publicly stated** — no waiver claim was found either way; this is
   the absence of a public claim, not evidence against compliance
-  (BotLab Dynamics — non-US regulatory context; Nova Sky Stories; Open Sky
-  Pro; Pixis Drones; SkyMagic — UK CAA is its primary regulator).
+  (Celestial and SkyMagic — UK-based, CAA is the relevant regulator, not
+  independently checked; Verge Aero's own direct-production shows).
+- **Not applicable** — non-US operators outside FAA jurisdiction with no
+  US operations found (BotLab Dynamics, Geoscan, HighGreat, Lumasky).
+
+2026-07-22 re-audit: independently re-verified each operator's genuine
+fleet ownership (none of the original 10 turned out to be a whitelabeler
+of a partner's fleet), added four new operators found via the same
+criteria (Celestial, Geoscan, HighGreat, Lumasky), and reversed the
+Verge Aero exclusion per the dual-role note above.
 
 ## Ordering
 
