@@ -52,6 +52,12 @@ ROOT = Path(__file__).resolve().parent
 # regardless of whether it's served at the domain root or a subdirectory.
 SITE_URL = os.environ.get("SITE_URL", "https://skies.sitara.systems/drone-show-operators")
 BASE = urllib.parse.urlsplit(SITE_URL).path.rstrip("/")
+# Set NOINDEX=1 for preview deploys (e.g. this repo's own GitHub Pages
+# workflow) not meant to be crawled/cited -- emits a blanket-disallow
+# robots.txt and a noindex meta tag on every page, so the preview never
+# competes with or duplicates the production skies.sitara.systems URL.
+# Same convention as the Experiential Design Index's build_site.py.
+NOINDEX = os.environ.get("NOINDEX") == "1"
 
 PAGES_DIR = ROOT / "content" / "pages"
 TEMPLATES_DIR = ROOT / "templates"
@@ -120,7 +126,8 @@ def build(out_dir: Path) -> list[dict]:
     base_prefix_re = re.compile(r'(href|src)="/(?!/)')
 
     for page in pages:
-        html = base.render(page=page, content=page["content"], site_url=SITE_URL)
+        html = base.render(page=page, content=page["content"], site_url=SITE_URL,
+                           noindex=NOINDEX)
         if BASE:
             html = base_prefix_re.sub(f'\\1="{BASE}/', html)
         dest = out_path(out_dir, page["url"])
@@ -142,6 +149,18 @@ def build(out_dir: Path) -> list[dict]:
     root_dir = ROOT / "content" / "root"
     if root_dir.exists():
         for extra in root_dir.glob("*"):
+            if NOINDEX and extra.name == "robots.txt":
+                (out_dir / "robots.txt").write_text(
+                    "# robots.txt -- preview deploy, not the production site.\n"
+                    "# Blanket disallow: this URL is not the canonical home for "
+                    "this record and should never be indexed or cited in its "
+                    "place. See the production robots.txt (linked from the "
+                    "production site) for the real crawl policy.\n\n"
+                    "User-agent: *\n"
+                    "Disallow: /\n\n"
+                    f"Sitemap: {SITE_URL}/sitemap.xml\n",
+                    encoding="utf-8")
+                continue
             shutil.copy2(extra, out_dir / extra.name)
 
     return pages

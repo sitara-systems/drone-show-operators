@@ -1,4 +1,11 @@
-name: Deploy site to GitHub Pages
+name: Deploy preview to GitHub Pages
+
+# Interim preview deploy only -- the production home for The Fleet Operator Directory is
+# https://skies.sitara.systems/drone-show-operators/ (folded into sitara-skies-website's
+# own deploy pipeline). This workflow publishes the same build to GitHub
+# Pages at a *different* URL for a quick look/diff, with NOINDEX=1 so the
+# preview is never indexed or cited in place of the production URL -- same
+# convention as the Experiential Design Index's preview workflow.
 
 on:
   push:
@@ -27,6 +34,7 @@ jobs:
       - name: Build site
         working-directory: site
         env:
+          NOINDEX: "1"
           SITE_URL: https://sitara-systems.github.io/drone-show-operators
         run: python build.py
       - uses: actions/upload-pages-artifact@v3
