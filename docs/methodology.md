@@ -54,7 +54,11 @@ waiver status is recorded in one of several states:
 - **Not publicly stated** — no waiver claim was found either way; this is
   the absence of a public claim, not evidence against compliance
   (Celestial and SkyMagic — UK-based, CAA is the relevant regulator, not
-  independently checked; Verge Aero's own direct-production shows).
+  independently checked; Skylights — Mexico-based, flying under Mexico's
+  Civil Aviation Law with AFAC as the relevant regulator, though a
+  reported Los Angeles operational base would make FAA jurisdiction
+  relevant if it flies US shows; Verge Aero's own direct-production
+  shows).
 - **Not applicable** — non-US operators outside FAA jurisdiction with no
   US operations found (BotLab Dynamics, Geoscan, HighGreat, Lumasky).
 

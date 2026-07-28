@@ -75,7 +75,14 @@ table.facts td, table.facts th { text-align: left; padding: .35rem .6rem .35rem 
 table.facts th { color: var(--muted); font-weight: 600; width: 11rem; white-space: nowrap; }
 table.list { width: 100%; }
 table.list th, table.list td { text-align: left; padding: .45rem .6rem; border-bottom: 1px solid var(--border); vertical-align: top; }
-table.list th { color: var(--muted); font-weight: 600; font-size: .85rem; text-transform: uppercase; letter-spacing: .03em; white-space: nowrap; }
+/* Column-header styling is thead-only on purpose. The directory's first
+   cell in each row is a <th scope="row"> (the operator name, for a11y),
+   so an unscoped `table.list th` also uppercased it and — via nowrap —
+   forced the column as wide as the longest name. One 84-character
+   operator name then claimed ~80% of the table and pushed the trailing
+   columns into overflow. */
+table.list thead th { color: var(--muted); font-weight: 600; font-size: .85rem; text-transform: uppercase; letter-spacing: .03em; white-space: nowrap; }
+table.list tbody th[scope="row"] { font-weight: 600; color: var(--fg); }
 table.list tr:hover td { background: var(--accent-bg); }
 table.list td.amount { font-variant-numeric: tabular-nums; white-space: nowrap; }
 table.list td.desc { max-width: 34rem; }

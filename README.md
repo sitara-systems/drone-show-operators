@@ -21,7 +21,7 @@ process.
 
 | File | Rows | Source |
 |---|---|---|
-| `data/operators.csv` | 15 | Each operator's own site + independent public coverage (news, FAA waiver records, one federal court filing) |
+| `data/operators.csv` | 16 | Each operator's own site + independent public coverage (news, FAA waiver records, one federal court filing) |
 
 Columns: `slug, name, hq_regions, fleet_scale_claim, fleet_scale_short,
 notable_shows, notable_shows_source, website, waiver_status,
